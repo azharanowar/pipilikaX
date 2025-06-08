@@ -1,120 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>PipilikaX - Your Space for AutoNotes</title>
-  <!-- Google Fonts: Poppins -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link href="assets/css/styles.css" rel="stylesheet" />
-  <style>
-    
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PipilikaX - Your Space for AutoNotes</title>
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="assets/images/pipilika-favicon.png">
+    <meta name="theme-color" content="#E90330" />
+    <link href="assets/css/styles.css" rel="stylesheet" />
+    <style>
+
+    </style>
 </head>
+
 <body>
-  <header>
-  <div id="headerSection" class="header-inner">
-    <!-- Logo -->
-    <div class="logo-container">
-      <a href="index.html" class="logo">
-        <img id="logoImage" src="assets/images/pipilika-logo.png" alt="PipilikaX Logo" />
-      </a>
-    </div>
-
-    <!-- Desktop Navigation -->
-    <nav class="desktop-nav">
-      <ul>
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">Blogs</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-    </nav>
-
-    <!-- Desktop CTA Button -->
-    <div class="desktop-btn">
-      <a href="#"><button class="btn">Join Now <img src="assets/images/arrow-white.svg" /></button></a>
-    </div>
-
-    <!-- Hamburger Icon -->
-    <div id="menuToggle" class="menu-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
-
-  <!-- Fullscreen Popup Menu -->
-  <div id="fullScreenMenu" class="full-screen-menu">
-    <div class="close-btn" id="closeMenu">&times;</div>
-    <ul>
-      <li><a href="#" class="active">Home</a></li>
-      <li><a href="#">Blogs</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Contact Us</a></li>
-      <li><a href="#"><button class="btn">Join Now <img src="assets/images/arrow-white.svg" /></button></a></li>
-    </ul>
-  </div>
-</header>
-
-
-
-  <main>
-    <section id="heroSection">
-        <canvas id="starfield"></canvas>
-    
-        <div id="heroContainer" class="container">
-            <div class="hero-wrapper">
-                <div class="hero-content">
-                <h2>Welcome to PipilikaX</h2>
-                <p>
-                    Adventures beyond the stars, adrenaline that defies gravity – welcome to: 
-                    <span id="typed-text"></span>
-                </p>
-                <a href="#"><button class="btn">Join the Journey <img src="assets/images/arrow-white.svg"/></button></a>
+    <header>
+        <div id="headerSection" class="header-inner">
+            <!-- Logo -->
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <img id="logoImage" src="assets/images/pipilika-logo.png" alt="PipilikaX Logo" />
+                </a>
             </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Desktop CTA Button -->
+            <div class="desktop-btn">
+                <a href="#"><button class="btn">Join Now <img src="assets/images/arrow-white.svg" /></button></a>
             </div>
-            <div class="hero-image">
-                <img src="assets/images/astronaut-image.png" alt="Space man image floating" />
+
+            <!-- Hamburger Icon -->
+            <div id="menuToggle" class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-    </section>
+
+        <!-- Fullscreen Popup Menu -->
+        <div id="fullScreenMenu" class="full-screen-menu">
+            <div class="close-btn" id="closeMenu">&times;</div>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="#"><button class="btn">Join Now <img src="assets/images/arrow-white.svg" /></button></a>
+                </li>
+            </ul>
+        </div>
+    </header>
 
 
-    <section id="features" class="container">
-      <h2>Features</h2>
-      <div class="flex" style="gap: 2rem; flex-wrap: wrap;">
-        <article style="flex: 1 1 300px; background: white; padding: 1.5rem; border-radius: var(--border-radius); box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-          <h3>Smart Auto-Note</h3>
-          <p>Automatically organize and summarize your notes with AI-powered technology.</p>
-        </article>
-        <article style="flex: 1 1 300px; background: white; padding: 1.5rem; border-radius: var(--border-radius); box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-          <h3>Cloud Sync</h3>
-          <p>Access your notes anytime, anywhere across all your devices.</p>
-        </article>
-        <article style="flex: 1 1 300px; background: white; padding: 1.5rem; border-radius: var(--border-radius); box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-          <h3>Collaboration</h3>
-          <p>Share and collaborate seamlessly with your team and friends.</p>
-        </article>
-        <a href="#"><button class="btn">Join the Journey <img src="assets/images/arrow-white.svg"/></button></a>
 
-      </div>
-    </section>
+    <main>
+        <section id="heroSection">
+            <canvas id="starfield"></canvas>
 
-    <section id="about" class="container" style="margin-top: 4rem;">
-      <h2>About PipilikaX</h2>
-      <p>PipilikaX is designed to streamline your knowledge workflow, making note-taking smarter, faster, and more efficient.</p>
-    </section>
+            <div id="heroContainer" class="container">
+                <div class="hero-wrapper">
+                    <div class="hero-content">
+                        <h2>Welcome to PipilikaX</h2>
+                        <p>
+                            Adventures beyond the stars, adrenaline that defies gravity – welcome to:
+                            <span id="typed-text"></span>
+                        </p>
+                        <a href="#"><button class="btn">Join the Journey <img
+                                    src="assets/images/arrow-white.svg" /></button></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/images/astronaut-image.png" alt="Space man image floating" />
+                </div>
+            </div>
+        </section>
 
-    <section id="contact" class="container" style="margin-top: 4rem; padding-bottom: 4rem;">
-      <h2>Contact Us</h2>
-      <p>Have questions? Reach out and we’ll be happy to assist you!</p>
-      <button>Contact Support</button>
-    </section>
-  </main>
-  <footer>
-    <a href="https://github.com/pipilikax" target="_blank"><strong>PipilikaX</strong></a> || Copyright © 2025 – All rights reserved.
-  </footer>
+        
+
+        <section id="aboutSection">
+            <div class="about-container">
+                <div class="about-image">
+                    <img class="floating-image" src="assets/images/era.png" alt="About PipilikaX" width="400">
+                </div>
+                <div class="about-content">
+                    <h2>Get to know PipilikaX</h2>
+                    <p>
+                        Pipilika X is a visionary initiative driven by curiosity, exploration, and the pursuit of knowledge. Inspired by the
+                        determination of ants (pipilika in Sanskrit) and the bold ambition of pioneers like SpaceX, Pipilika X is on a mission
+                        to make complex information about Earth and the universe easily accessible to everyone.
+                        
+                        We believe that knowledge should not be reserved for a few—it should flow freely, like stardust, reaching minds across
+                        the globe. Whether it’s decoding the wonders of space, uncovering hidden patterns of our planet, or translating
+                        scientific breakthroughs into everyday language, Pipilika X is here to deliver insights that matter.
+                        <br><br>
+                        Our journey isn't just about reaching the stars—it’s about understanding them, and bringing that understanding back to
+                        Earth in the simplest, most engaging way possible.
+                        
+                        Pipilika X – Know the world. Explore beyond.
+                    </p>
+                    <a href="#"><button class="btn">Join the Journey Now <img src="assets/images/arrow-white.svg" /></button></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="planetNamesSection">
+            <div>
+                <h3>Know YOUR solar system.</h3>
+                <p>hope your'e on earth tho..</p>
+                <img src="assets/images/planet-names.svg" alt="Planet names svg image"/>
+                <p>Yeah, and the <strong>`Sun`</strong> too</p>
+            </div>
+        </section>
+
+        <section id="imageOfTheDaySection">
+            <div class="about-container">
+                <div class="about-content image-of-the-day-content">
+                    <p>TODAY</p>
+                    <h2>Image Of The Day</h2>
+                    <p>
+                        <strong>Webb Sees Sombrero Galaxy in Near-Infrared</strong>
+                        NASA’s James Webb Space Telescope recently imaged the Sombrero Galaxy with its NIRCam (Near-Infrared Camera), which
+                        shows dust from the galaxy’s outer ring blocking stellar light from stars within the galaxy. In the central region
+                        of the galaxy, the roughly 2,000 globular clusters, or collections of hundreds of thousands of old stars held
+                        together by gravity, glow in the near-infrared. 
+                        <br><br>The Sombrero Galaxy is around 30 million light-years from Earth in
+                        the constellation Virgo. From Earth, we see this galaxy nearly “edge-on,” or from the side.
+                    </p>
+                    <a href="https://www.nasa.gov/image-of-the-day/" target="_blank"><button class="btn">Browse Image Archive <img src="assets/images/arrow-white.svg" /></button></a>
+                </div>
+                <div class="about-image image-of-the-day">
+                    <img class="" src="assets/images/image-of-the-day.jpg" alt="NASA image of the day" width="400">
+                </div>
+            </div>
+        </section>
+
+        <section id="engineSection">
+            <div class="engine-content">
+                <h3 class="engine-title">Pipilika X Engine</h3>
+                <div class="engines-slide-content">
+                    <h4>Tech & Features</h4>
+                    <div class="engines-slide">
+                        <div class="engines-slide-text">Live Space Feeds</div>
+                        <div class="dot"></div>
+                        <div class="engines-slide-text">Real-Time Earth Data</div>
+                        <div class="dot"></div>
+                        <div class="engines-slide-text">Satellite Mapping</div>
+                        <div class="dot"></div>
+                        <div class="engines-slide-text">Climate Analytics</div>
+                        <div class="dot"></div>
+                        <div class="engines-slide-text">Planetary Info</div>
+                        <div class="dot"></div>
+                        <div class="engines-slide-text">AI Predictions</div>
+                        <div class="dot"></div>
+                        <div class="engines-slide-text">Data Visualization</div>
+                        <div class="dot"></div>
+                        <div class="engines-slide-text">Interactive UI</div>
+                        <div class="dot"></div>
+        
+                        <!-- Duplicate for infinite loop -->
+                        <div class="engines-slide-text">Live Space Feeds</div>
+                        <div class="dot"></div>
+                        <div class="engines-slide-text">Real-Time Earth Data</div>
+                        <div class="dot"></div>
+                        <div class="engines-slide-text">Satellite Mapping</div>
+                        <div class="dot"></div>
+                        <div class="engines-slide-text">Climate Analytics</div>
+                        <div class="dot"></div>
+                        <div class="engines-slide-text">Planetary Info</div>
+                        <div class="dot"></div>
+                        <div class="engines-slide-text">AI Predictions</div>
+                        <div class="dot"></div>
+                        <div class="engines-slide-text">Data Visualization</div>
+                        <div class="dot"></div>
+                        <div class="engines-slide-text">Interactive UI</div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+                <div class="engines-slide-content reverse">
+                    <h4>Modules & Intelligence</h4>
+                    <div class="engines-slide reverse-track">
+                        <div class="engines-slide-text">JavaScript</div>
+                        <div class="dot"></div>
+                        <div class="engines-slide-text">Three.js</div>
+                        <div class="dot"></div>
+                        <div class="engines-slide-text">Node.js</div>
+                        <div class="dot"></div>
+                        <div class="engines-slide-text">MongoDB</div>
+                        <div class="dot"></div>
+                        <div class="engines-slide-text">REST API</div>
+                        <div class="dot"></div>
+                        <div class="engines-slide-text">WebSocket</div>
+                        <div class="dot"></div>
+                        <div class="engines-slide-text">OpenCV</div>
+                        <div class="dot"></div>
+                        <div class="engines-slide-text">TensorFlow</div>
+                        <div class="dot"></div>
+        
+                        <!-- Duplicate for infinite loop -->
+                        <div class="engines-slide-text">JavaScript</div>
+                        <div class="dot"></div>
+                        <div class="engines-slide-text">Three.js</div>
+                        <div class="dot"></div>
+                        <div class="engines-slide-text">Node.js</div>
+                        <div class="dot"></div>
+                        <div class="engines-slide-text">MongoDB</div>
+                        <div class="dot"></div>
+                        <div class="engines-slide-text">REST API</div>
+                        <div class="dot"></div>
+                        <div class="engines-slide-text">WebSocket</div>
+                        <div class="dot"></div>
+                        <div class="engines-slide-text">OpenCV</div>
+                        <div class="dot"></div>
+                        <div class="engines-slide-text">TensorFlow</div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="satelliteTracker">
+            <div class="tracker-container">
+                <div class="tracker-content">
+                    <h2 class="tracker-title">🌌 Live ISS Tracker</h2>
+                    <p class="tracker-description">
+                        Watch the real-time position of the International Space Station as it orbits the Earth. Powered by Pipilika
+                        X’s space-data integration.
+                    </p>
+                    <a href="#"><button class="btn">Learn More <img src="assets/images/arrow-white.svg" /></button></a>
+                </div>
+                <div class="tracker-frame-wrapper">
+                    <iframe
+                        src="https://isstracker.pl/en/widget/map?disableInfoBox=1&lang=en&z=4&mapType=satellite&units=metric&preloader=1&showSatTooltip=1&dayNightLayer=1&showFutureOrbit=1"
+                        width="100%" height="450" frameborder="0" allowfullscreen loading="lazy" class="tracker-iframe">
+                    </iframe>
+                </div>
+                
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+        <a href="https://github.com/azharanowar/pipilikaX" target="_blank"><strong>PipilikaX</strong></a> || Copyright ©
+        2025 – All rights reserved.
+    </footer>
+
+    <div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+<button id="scrollToTopBtn" title="Go to top"><img src="assets/images/scroll-to-top.gif"/></button>
 
 
 <script src="assets/js/scripts.js"></script>

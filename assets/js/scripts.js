@@ -166,3 +166,30 @@ window.addEventListener('scroll', function () {
     fullScreenMenu.classList.remove('active');
     document.body.style.overflow = 'auto';
   });
+
+
+  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      scrollToTopBtn.classList.add("show");
+    } else {
+      scrollToTopBtn.classList.remove("show");
+    }
+  });
+
+  scrollToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+
+
+  const dot = document.querySelector('.cursor-dot');
+const ring = document.querySelector('.cursor-ring');
+
+document.addEventListener('mousemove', e => {
+  dot.style.top = ring.style.top = `${e.clientY}px`;
+  dot.style.left = ring.style.left = `${e.clientX}px`;
+});
