@@ -28,10 +28,10 @@
             <!-- Desktop Navigation -->
             <nav class="desktop-nav">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="blogs.html">Blogs</a></li>
                     <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="contact-us.html" class="active">Contact Us</a></li>
                 </ul>
             </nav>
 
@@ -52,10 +52,10 @@
         <div id="fullScreenMenu" class="full-screen-menu">
             <div class="close-btn" id="closeMenu">&times;</div>
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="blogs.html">Blogs</a></li>
                 <li><a href="about-us.html">About Us</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="contact-us.html" class="active">Contact Us</a></li>
                 <li><a href="#"><button class="btn">Join Now <img src="assets/images/arrow-white.svg" /></button></a>
                 </li>
             </ul>
@@ -64,65 +64,37 @@
 
 
 
-    <main>
-        <section id="heroSection">
-            <canvas id="starfield"></canvas>
+    <main class="contact-section">
+    <h1>Contact Us</h1>
+    <p class="subtitle">We'd love to hear from you. Let's get in touch!</p>
 
-            <div id="heroContainer" class="container">
-                <div class="hero-wrapper">
-                    <div class="hero-content">
-                        <h2>Welcome to PipilikaX</h2>
-                        <p>
-                            Adventures beyond the stars, adrenaline that defies gravity – welcome to:
-                            <span id="typed-text"></span>
-                        </p>
-                        <a href="#"><button class="btn">Join the Journey <img
-                                    src="assets/images/arrow-white.svg" /></button></a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="assets/images/astronaut-image.png" alt="Space man image floating" />
-                </div>
-            </div>
-        </section>
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <h2>Our Location</h2>
+        <p><strong>Address:</strong> Dong-eui University, Intelligent Computing Department(International Students), 3rd Semester</p>
+        <p><strong>Email:</strong> contact@pipilikaX.com</p>
+        <p><strong>Phone:</strong> 010-5149-3665</p>
+      </div>
 
+      <form class="contact-form">
+        <h2>Send a Message</h2>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <a href="#"><button class="btn">Join Now <img src="assets/images/arrow-white.svg" /></button></a>
+      </form>
+    </div>
 
-        <section id="features" class="container">
-            <h2>Features</h2>
-            <div class="flex" style="gap: 2rem; flex-wrap: wrap;">
-                <article
-                    style="flex: 1 1 300px; background: white; padding: 1.5rem; border-radius: var(--border-radius); box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-                    <h3>Smart Auto-Note</h3>
-                    <p>Automatically organize and summarize your notes with AI-powered technology.</p>
-                </article>
-                <article
-                    style="flex: 1 1 300px; background: white; padding: 1.5rem; border-radius: var(--border-radius); box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-                    <h3>Cloud Sync</h3>
-                    <p>Access your notes anytime, anywhere across all your devices.</p>
-                </article>
-                <article
-                    style="flex: 1 1 300px; background: white; padding: 1.5rem; border-radius: var(--border-radius); box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-                    <h3>Collaboration</h3>
-                    <p>Share and collaborate seamlessly with your team and friends.</p>
-                </article>
-                <a href="#"><button class="btn">Join the Journey <img
-                            src="assets/images/arrow-white.svg" /></button></a>
-
-            </div>
-        </section>
-
-        <section id="about" class="container" style="margin-top: 4rem;">
-            <h2>About PipilikaX</h2>
-            <p>PipilikaX is designed to streamline your knowledge workflow, making note-taking smarter, faster, and more
-                efficient.</p>
-        </section>
-
-        <section id="contact" class="container" style="margin-top: 4rem; padding-bottom: 4rem;">
-            <h2>Contact Us</h2>
-            <p>Have questions? Reach out and we’ll be happy to assist you!</p>
-            <button>Contact Support</button>
-        </section>
-    </main>
+    <div class="map-container">
+      <h2>Find Us Here</h2>
+      <iframe
+        src="https://maps.google.com/maps?q=busan&t=k&z=13&ie=UTF8&iwloc=&output=embed"
+        frameborder="0"
+        allowfullscreen
+        loading="lazy"
+      ></iframe>
+    </div>
+  </main>
     <footer>
         <a href="https://github.com/azharanowar/pipilikaX" target="_blank"><strong>PipilikaX</strong></a> || Copyright ©
         2025 – All rights reserved.

@@ -28,9 +28,9 @@
             <!-- Desktop Navigation -->
             <nav class="desktop-nav">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="blogs.html">Blogs</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="about-us.html" class="active">About Us</a></li>
                     <li><a href="contact-us.html">Contact Us</a></li>
                 </ul>
             </nav>
@@ -52,9 +52,9 @@
         <div id="fullScreenMenu" class="full-screen-menu">
             <div class="close-btn" id="closeMenu">&times;</div>
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="blogs.html">Blogs</a></li>
-                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="about-us.html"  class="active">About Us</a></li>
                 <li><a href="contact-us.html">Contact Us</a></li>
                 <li><a href="#"><button class="btn">Join Now <img src="assets/images/arrow-white.svg" /></button></a>
                 </li>
@@ -64,63 +64,68 @@
 
 
 
-    <main>
-        <section id="heroSection">
-            <canvas id="starfield"></canvas>
-
-            <div id="heroContainer" class="container">
-                <div class="hero-wrapper">
-                    <div class="hero-content">
-                        <h2>Welcome to PipilikaX</h2>
-                        <p>
-                            Adventures beyond the stars, adrenaline that defies gravity – welcome to:
-                            <span id="typed-text"></span>
-                        </p>
-                        <a href="#"><button class="btn">Join the Journey <img
-                                    src="assets/images/arrow-white.svg" /></button></a>
-                    </div>
+    <main class="about-section">
+        <section class="intro">
+            <h1>About Us</h1>
+            <p class="subtitle">We are a passionate team dedicated to creating cutting-edge AI solutions that impact the
+                future.</p>
+        </section>
+        <section id="aboutSection" style="background-color: white; padding: 70px 10vw;">
+            <div class="about-container">
+                <div class="about-image">
+                    <img class="floating-image" src="assets/images/space-man-img.png" alt="About PipilikaX" width="400">
                 </div>
-                <div class="hero-image">
-                    <img src="assets/images/astronaut-image.png" alt="Space man image floating" />
+                <div class="about-content">
+                    <h2>Get to know PipilikaX</h2>
+                    <p>
+                        Pipilika X is a visionary initiative driven by curiosity, exploration, and the pursuit of
+                        knowledge. Inspired by the
+                        determination of ants (pipilika in Sanskrit) and the bold ambition of pioneers like SpaceX,
+                        Pipilika X is on a mission
+                        to make complex information about Earth and the universe easily accessible to everyone.
+    
+                        We believe that knowledge should not be reserved for a few—it should flow freely, like stardust,
+                        reaching minds across
+                        the globe. Whether it’s decoding the wonders of space, uncovering hidden patterns of our planet,
+                        or translating
+                        scientific breakthroughs into everyday language, Pipilika X is here to deliver insights that
+                        matter.
+                        <br><br>
+                        Our journey isn't just about reaching the stars—it’s about understanding them, and bringing that
+                        understanding back to
+                        Earth in the simplest, most engaging way possible.
+    
+                        Pipilika X – Know the world. Explore beyond.
+                    </p>
+                    <a href="#"><button class="btn">Join the Journey Now <img
+                                src="assets/images/arrow-white.svg" /></button></a>
                 </div>
             </div>
         </section>
-
-
-        <section id="features" class="container">
-            <h2>Features</h2>
-            <div class="flex" style="gap: 2rem; flex-wrap: wrap;">
-                <article
-                    style="flex: 1 1 300px; background: white; padding: 1.5rem; border-radius: var(--border-radius); box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-                    <h3>Smart Auto-Note</h3>
-                    <p>Automatically organize and summarize your notes with AI-powered technology.</p>
-                </article>
-                <article
-                    style="flex: 1 1 300px; background: white; padding: 1.5rem; border-radius: var(--border-radius); box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-                    <h3>Cloud Sync</h3>
-                    <p>Access your notes anytime, anywhere across all your devices.</p>
-                </article>
-                <article
-                    style="flex: 1 1 300px; background: white; padding: 1.5rem; border-radius: var(--border-radius); box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-                    <h3>Collaboration</h3>
-                    <p>Share and collaborate seamlessly with your team and friends.</p>
-                </article>
-                <a href="#"><button class="btn">Join the Journey <img
-                            src="assets/images/arrow-white.svg" /></button></a>
-
+        <section class="team-section">
+            <h2>Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="assets/images/team-1.jpg" alt="Team Member 1 - Azhar Anowar Photo">
+                    <h3>Azhar Anowar</h3>
+                    <p>Founder & CEO</p>
+                </div>
+                <div class="team-member">
+                    <img src="assets/images/team-3.jpg" alt="Team Member 3">
+                    <h3>Al-Rafi Azad</h3>
+                    <p>Product Designer</p>
+                </div>
+                <div class="team-member">
+                    <img src="assets/images/team-2.jpg" alt="Team Member 2">
+                    <h3>Sijan Khan</h3>
+                    <p>Chief Technology Officer</p>
+                </div>
+                <div class="team-member">
+                    <img src="assets/images/team-4.jpg" alt="Team Member 4">
+                    <h3>Taohidul Islam</h3>
+                    <p>Marketing Lead</p>
+                </div>
             </div>
-        </section>
-
-        <section id="about" class="container" style="margin-top: 4rem;">
-            <h2>About PipilikaX</h2>
-            <p>PipilikaX is designed to streamline your knowledge workflow, making note-taking smarter, faster, and more
-                efficient.</p>
-        </section>
-
-        <section id="contact" class="container" style="margin-top: 4rem; padding-bottom: 4rem;">
-            <h2>Contact Us</h2>
-            <p>Have questions? Reach out and we’ll be happy to assist you!</p>
-            <button>Contact Support</button>
         </section>
     </main>
     <footer>
