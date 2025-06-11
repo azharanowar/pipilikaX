@@ -1179,7 +1179,7 @@ header {
   width: 200%;
   height: 700px;
   background: url('../images/space.jpg') repeat-x;
-  animation: bg-move 120s linear infinite;
+  animation: bg-move 20s linear infinite;
   z-index: -1;
 }
 
